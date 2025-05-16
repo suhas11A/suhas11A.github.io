@@ -1,1 +1,134 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name</title>
+  <style>
+    :root {
+      --bg: #f9f9f9;
+      --text: #333;
+      --accent: #0077ff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      color: gray;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.3rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .project {
+      background: white;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Name</h1>
+    <p>Web Developer • Designer • Creator</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm a developer who loves building sleek and functional websites. I specialize in front-end development, UI/UX design, and making things work on the web.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A clean and responsive portfolio built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project">
+        <h3>Blog Platform</h3>
+        <p>A markdown-powered blog with tags, search, and a custom theme.</p>
+      </div>
+      <div class="project">
+        <h3>To-Do App</h3>
+        <p>A simple productivity app using local storage and drag-and-drop sorting.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can reach me at <a href="mailto:you@example.com">you@example.com</a> or find me on <a href="#">LinkedIn</a>.</p>
+  </section>
+
+  <footer>
+    © 2025 Your Name. All rights reserved.
+  </footer>
+
+</body>
+</html>
